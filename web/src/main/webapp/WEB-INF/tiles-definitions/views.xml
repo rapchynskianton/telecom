@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="DefaultTemplate"
+		template="/WEB-INF/views/main-template.jsp">
+		<put-attribute name="title" value="Телеком" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition name="attribute.list" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/attribute/list.jsp" />
+	</definition>
+
+
+
+	<definition name="attribute.edit" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/attribute/form.jsp" />
+	</definition>
+
+	<definition name="transaction.list"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/transaction/list.jsp" />
+	</definition>
+	<definition name="transaction.edit"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/transaction/form.jsp" />
+	</definition>
+
+	<definition name="support.list" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/support/list.jsp" />
+	</definition>
+	<definition name="support.edit" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/support/form.jsp" />
+	</definition>
+
+
+	<definition name="tariffPlan.list" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/tariffPlan/list.jsp" />
+	</definition>
+
+	<definition name="tariffPlan.edit" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/tariffPlan/form.jsp" />
+	</definition>
+
+	<definition name="connectedTariffPlan.list"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/connectedTariffPlan/list.jsp" />
+	</definition>
+
+	<definition name="connectedTariffPlan.edit"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/connectedTariffPlan/form.jsp" />
+	</definition>
+
+	<definition name="attributeValue.list"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/attributeValue/list.jsp" />
+	</definition>
+
+	<definition name="attributeValue.edit"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/attributeValue/form.jsp" />
+	</definition>
+
+
+	<definition name="userCabinet.list"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/userCabinet/list.jsp" />
+	</definition>
+
+
+
+	<definition name="userCabinet.edit"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/userCabinet/form.jsp" />
+	</definition>
+
+	<definition name="branch.list" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/branch/list.jsp" />
+	</definition>
+	<definition name="branch.edit" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/branch/form.jsp" />
+	</definition>
+
+
+	<definition name="userAccount.list"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/userAccount/list.jsp" />
+	</definition>
+
+	<definition name="userAccount.edit"
+		extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/userAccount/form.jsp" />
+	</definition>
+
+
+
+	<definition name="login" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/login.jsp" />
+	</definition>
+
+
+
+
+
+
+
+
+</tiles-definitions>
